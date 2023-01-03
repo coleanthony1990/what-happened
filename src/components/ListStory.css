@@ -1,6 +1,9 @@
 
 .listed-story {
-  height: 20rem;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 1rem;
+
 }
 
 .list-img {

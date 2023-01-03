@@ -12,7 +12,7 @@ const List = ({stories}) => {
         title={story.title}
         abstract={story.abstract}
         byline={story.byline}
-        photo={story.multimedia[0]}
+        photo={story.multimedia}
         />
     )
   })

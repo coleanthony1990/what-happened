@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/chomsky');
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-family: 'Chomsky', sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
