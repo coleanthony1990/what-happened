@@ -17,7 +17,7 @@ const Form = ({changeKeyword}) => {
       <button className='buttons' type='button' value='politics' onClick={handleChange}>Politics</button>
       <label className='selects' htmlFor="category"></label>
       <select name="category" id="category" onChange={handleChange} >
-        <option value="">More Categories</option>
+        <option hidden>More Categories</option>
         <option value="arts" onClick={handleChange}>Arts</option>
         <option value="automobiles" onClick={handleChange}>Automobiles</option>
         <option value="books" onClick={handleChange}>Books</option>

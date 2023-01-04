@@ -1,9 +1,10 @@
 import React from 'react'
 import ListStory from './ListStory'
+import './List.css'
 
 const List = ({stories}) => {
   const formattedStories = stories.filter(article => {
-    if (article.section !== 'admin' && article.multimedia !== null) {
+    if (article.title && article.multimedia) {
       return article
     }
   })
@@ -17,11 +18,12 @@ const List = ({stories}) => {
         abstract={story.abstract}
         byline={story.byline}
         photo={story.multimedia}
+        created_date={story.created_date}
         />
     )
   })
   return (
-    <div>
+    <div className='list-view'>
       {article}
     </div>
   )

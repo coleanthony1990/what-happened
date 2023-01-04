@@ -3,6 +3,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 import List from './components/List';
 import './App.css';
 import Form from './components/Form';
+import SingleArticle from './components/SingleArticle';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
     console.log(typeof keyword)
     setKeyword(keyword)
   }
-
+  console.log(stories)
   return (
     <div className="App">
       <header className="App-header">
@@ -36,6 +37,19 @@ function App() {
       <Route exact path="/">
         <List stories={stories}/>
       </Route>
+      <Route path="/:created_date" render={({ match }) => {
+        const storyToRender = stories.find(story => {
+          return story.created_date === match.params.created_date
+        })
+        console.log(match.params.created_date)
+        
+
+      return <SingleArticle
+              storyToRender={storyToRender}
+              />
+          }}
+      />
+        
       
       </Switch>
     </div>

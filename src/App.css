@@ -10,3 +10,11 @@
   background-color: transparent;
 }
 
+header {
+  border-bottom: 2px solid black;
+  padding-bottom: .6rem;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+

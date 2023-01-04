@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./ListStory.css"
 
-const ListStory = ({photo, byline, section, abstract, title}) => {
+const ListStory = ({photo, byline, section, abstract, title, created_date}) => {
   const formatSection = () => {
     if (section === 'us') {
       return 'U.S.'
@@ -13,14 +14,15 @@ const ListStory = ({photo, byline, section, abstract, title}) => {
       return 'Times Magazine'
     } else if (section === 'well') {
       return 'Wellness'
-    }
-     else {
+    } else {
       return section[0].toUpperCase() + section.slice(1)
     }
   }
+  const linkText = `/${created_date}`
+  console.log(created_date)
 
   return (
-    <div className='listed-story'>
+    <Link to={linkText} style={{ textDecoration: 'none' }}><div className='listed-story'>
       <img className="list-img" src={photo[0].url} alt={photo.caption}/>
       <div className='story-text'>
         <p className='description section'>{formatSection()}</p>
@@ -28,7 +30,7 @@ const ListStory = ({photo, byline, section, abstract, title}) => {
         <p className='description abstract'>{abstract}</p>
         <p className='description byline'>{byline}</p>
       </div>
-    </div>
+    </div></Link>
   )
 }
 
