@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import './Form.css'
 
 const Form = ({changeKeyword}) => {
@@ -8,7 +9,7 @@ const Form = ({changeKeyword}) => {
   }
 
   return (
-    
+    <Link to='/'>
     <div className='sections'>
       <button className='buttons' type='button' value='us' onClick={handleChange} >U.S.</button>
       <button className='buttons' type='button' value='world' onClick={handleChange} >World</button>
@@ -43,6 +44,7 @@ const Form = ({changeKeyword}) => {
         <option value="world" onClick={handleChange}>World</option>
       </select>
     </div>
+    </Link>
   )
 }
 

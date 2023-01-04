@@ -23,14 +23,16 @@ function App() {
   }, [keyword])
 
   const changeKeyword = (keyword) => {
-    console.log(typeof keyword)
     setKeyword(keyword)
   }
-  console.log(stories)
+
+  const handleKeyword = () => {
+    setKeyword('home')
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <button className='logo'>What Happened?</button>
+        <Link to='/'><button className='logo' onClick={handleKeyword}>What Happened?</button></Link>
         <Form changeKeyword={changeKeyword} />
       </header>
       <Switch>
@@ -41,16 +43,11 @@ function App() {
         const storyToRender = stories.find(story => {
           return story.created_date === match.params.created_date
         })
-        console.log(match.params.created_date)
-        
-
-      return <SingleArticle
+        return <SingleArticle
               storyToRender={storyToRender}
               />
-          }}
+        }}
       />
-        
-      
       </Switch>
     </div>
   );

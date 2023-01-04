@@ -19,6 +19,7 @@ const List = ({stories}) => {
         byline={story.byline}
         photo={story.multimedia}
         created_date={story.created_date}
+        uri={story.uri}
         />
     )
   })

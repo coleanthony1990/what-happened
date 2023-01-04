@@ -19,7 +19,6 @@ const ListStory = ({photo, byline, section, abstract, title, created_date}) => {
     }
   }
   const linkText = `/${created_date}`
-  console.log(created_date)
 
   return (
     <Link to={linkText} style={{ textDecoration: 'none' }}><div className='listed-story'>
