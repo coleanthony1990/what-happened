@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to='/' className='logo'>What Happened?</Link>
+        <button className='logo'>What Happened?</button>
         <Form changeKeyword={changeKeyword} />
       </header>
       <Switch>

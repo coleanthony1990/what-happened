@@ -3,11 +3,32 @@
   border-bottom: 1px solid black;
   width: 90%;
   margin: 1rem;
+  display: flex;
+  cursor: pointer;
+}
 
+.story-text {
+  margin-left: .8rem;
+}
+
+.description {
+  margin-top: -.5rem;
 }
 
 .list-img {
   width: 12rem;
   height: 8rem;
   object-fit: cover;
+  margin-bottom: 1rem;
+
+}
+
+.section {
+  font-size: .7rem;
+  color: rgb(84, 84, 85);
+}
+
+.byline {
+  font-size: .7rem;
+  color: rgb(84, 84, 85);
 }

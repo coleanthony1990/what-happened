@@ -2,8 +2,12 @@ import React from 'react'
 import ListStory from './ListStory'
 
 const List = ({stories}) => {
-  console.log(stories)
-  const article = stories.map((story, index) => {
+  const formattedStories = stories.filter(article => {
+    if (article.section !== 'admin' && article.multimedia !== null) {
+      return article
+    }
+  })
+  const article = formattedStories.map((story, index) => {
     
     return (
       <ListStory

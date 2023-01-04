@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Form.css'
 
 const Form = ({changeKeyword}) => {
 
@@ -9,13 +10,14 @@ const Form = ({changeKeyword}) => {
   return (
     
     <div className='sections'>
-      <button type='button' value='us' onClick={handleChange} >U.S.</button>
-      <button type='button' value='world' onClick={handleChange} >World</button>
-      <button type='button' value='science' onClick={handleChange}>Science</button>
-      <button type='button' value='business' onClick={handleChange}>Business</button>
-      <button type='button' value='politics' onClick={handleChange}>Politics</button>
-      <label htmlFor="category">More categories:</label>
-      <select name="category" id="category" onChange={handleChange}>
+      <button className='buttons' type='button' value='us' onClick={handleChange} >U.S.</button>
+      <button className='buttons' type='button' value='world' onClick={handleChange} >World</button>
+      <button className='buttons' type='button' value='science' onClick={handleChange}>Science</button>
+      <button className='buttons' type='button' value='business' onClick={handleChange}>Business</button>
+      <button className='buttons' type='button' value='politics' onClick={handleChange}>Politics</button>
+      <label className='selects' htmlFor="category"></label>
+      <select name="category" id="category" onChange={handleChange} >
+        <option value="">More Categories</option>
         <option value="arts" onClick={handleChange}>Arts</option>
         <option value="automobiles" onClick={handleChange}>Automobiles</option>
         <option value="books" onClick={handleChange}>Books</option>
