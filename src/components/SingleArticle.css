@@ -11,7 +11,7 @@
 .single-img {
   width: 28rem;
   height: 18rem;
-  object-fit: cover;
+  object-fit: contain;
   margin-left: auto;
   margin-right: auto;
 
