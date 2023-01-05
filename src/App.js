@@ -46,9 +46,9 @@ function App() {
       <Route exact path="/">
         <List stories={stories}/>
       </Route>
-      <Route path="/:created_date" render={({ match }) => {
+      <Route path="/:link" render={({ match }) => {
         const storyToRender = stories.find(story => {
-          return story.created_date === match.params.created_date
+          return story.title.replace(/[^\w ]/g, '').replace(/\s/g,'-') === match.params.link
         })
         return <SingleArticle
               storyToRender={storyToRender}

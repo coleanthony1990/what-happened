@@ -18,7 +18,9 @@ const ListStory = ({photo, byline, section, abstract, title, created_date}) => {
       return section[0].toUpperCase() + section.slice(1)
     }
   }
-  const linkText = `/${created_date}`
+  const formatLink = title.replace(/[^\w ]/g, '').replace(/\s/g,'-')
+  const linkText = `/${formatLink}`
+  console.log(formatLink)
 
   return (
     <Link to={linkText} style={{ textDecoration: 'none' }}><div className='listed-story'>
