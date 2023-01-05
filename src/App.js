@@ -37,7 +37,6 @@ function App() {
   const searchStories = (term) => {
     const filteredStories = cachedStories.filter(story => story.abstract.toLowerCase().includes(term) || story.title.toLowerCase().includes(term))
     setStories(filteredStories)
-    console.log(filteredStories)
   }
 
   return (
