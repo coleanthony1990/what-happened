@@ -22,7 +22,7 @@ const ListStory = ({photo, byline, section, abstract, title, created_date}) => {
 
   return (
     <Link to={linkText} style={{ textDecoration: 'none' }}><div className='listed-story'>
-      <img className="list-img" src={photo[0].url} alt={photo.caption}/>
+      <img className="list-img" src={photo[0].url} alt={photo[0].caption}/>
       <div className='story-text'>
         <p className='description section'>{formatSection()}</p>
         <h3 className='description title'>{title}</h3>
