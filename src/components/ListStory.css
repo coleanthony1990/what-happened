@@ -17,11 +17,10 @@
 }
 
 .list-img {
-  width: 12rem;
-  height: 8rem;
-  object-fit: cover;
+  width: 13rem;
+  height: 10rem;
+  object-fit: contain;
   margin-bottom: 1rem;
-  text-decoration: none;
 }
 
 .section {
