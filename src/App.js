@@ -30,10 +30,6 @@ function App() {
     setKeyword(keyword)
   }
 
-  const handleKeyword = () => {
-    setKeyword('home')
-  }
-
   const searchStories = (term) => {
     const filteredStories = cachedStories.filter(story => story.abstract.toLowerCase().includes(term) || story.title.toLowerCase().includes(term))
     setStories(filteredStories)
@@ -42,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to='/'><button className='logo' onClick={handleKeyword}>What Happened?</button></Link>
+        <Link to='/'><button className='logo' onClick={() => setKeyword('home')}>What Happened?</button></Link>
         <Form changeKeyword={changeKeyword} searchStories={searchStories}/>
       </header>
       <Switch>
