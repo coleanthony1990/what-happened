@@ -7,12 +7,9 @@
 - [Project Spec](#project-spec)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Accessibility](#accessibility)
-- [Testing](#testing)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
-- [Reflections](#reflections)
 
 ---
 
