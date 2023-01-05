@@ -29,6 +29,7 @@ function App() {
   const changeKeyword = (keyword) => {
     setKeyword(keyword)
   }
+  console.log(stories)
 
   const searchStories = (term) => {
     const filteredStories = cachedStories.filter(story => story.abstract.toLowerCase().includes(term) || story.title.toLowerCase().includes(term))
