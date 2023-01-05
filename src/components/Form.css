@@ -7,11 +7,6 @@
   font-family: 'Goudy Bookletter 1911', serif
 }
 
-/* .selects {
-  font-size: .6rem;
-  margin-left: .5rem;
-} */
-
 select {
   border-radius: 2px;
   background-color: rgb(232, 234, 235);
@@ -20,5 +15,15 @@ select {
   margin-left: .7rem;
   height: .9rem;
   font-family: 'Goudy Bookletter 1911', serif
+}
+
+.search {
+  margin-left: .7rem;
+  width: 5rem;
+  height: .7rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: .6rem;
+  border: .001rem solid rgb(170, 169, 169);
+  border-radius: 2px;
 }
 

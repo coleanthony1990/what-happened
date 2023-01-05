@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Form.css'
 
-const Form = ({changeKeyword}) => {
+const Form = ({changeKeyword, searchStories}) => {
+  const [search, setSearch] = useState('')
 
   const handleChange = event => {
     changeKeyword(event.target.value)
   }
+
+  useEffect(() => {
+    searchStories(search)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search])
 
   return (
     <Link to='/'>
@@ -43,6 +49,7 @@ const Form = ({changeKeyword}) => {
         <option value="us" onClick={handleChange}>U.S.</option>
         <option value="world" onClick={handleChange}>World</option>
       </select>
+      <input className='search' type='text' placeholder='search' value={search} onChange={(event) => setSearch(event.target.value)}></input>
     </div>
     </Link>
   )

@@ -9,6 +9,7 @@ function App() {
 
   const [stories, setStories] = useState([])
   const [keyword, setKeyword] = useState('home')
+  const [cachedStories, setCachedStories] = useState([])
 
   useEffect(() => {
     var requestOptions = {
@@ -18,7 +19,10 @@ function App() {
     
     fetch(`https://api.nytimes.com/svc/topstories/v2/${keyword}.json?api-key=TuXGkIt8IAUEamKaAM5AIaMaDl4BMx7Y`, requestOptions)
       .then(response => response.json())
-      .then(result => setStories(result.results))
+      .then(result => {
+        setStories(result.results)
+        setCachedStories(result.results)
+      })
       .catch(error => console.log('error', error));
   }, [keyword])
 
@@ -29,11 +33,18 @@ function App() {
   const handleKeyword = () => {
     setKeyword('home')
   }
+
+  const searchStories = (term) => {
+    const filteredStories = cachedStories.filter(story => story.abstract.toLowerCase().includes(term) || story.title.toLowerCase().includes(term))
+    setStories(filteredStories)
+    console.log(filteredStories)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <Link to='/'><button className='logo' onClick={handleKeyword}>What Happened?</button></Link>
-        <Form changeKeyword={changeKeyword} />
+        <Form changeKeyword={changeKeyword} searchStories={searchStories}/>
       </header>
       <Switch>
       <Route exact path="/">
