@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+.buttons {
+  border: none;
+  background-color: transparent;
+  margin-left: .5rem;
+  cursor: pointer;
+  font-family: 'Goudy Bookletter 1911', serif
+}
+
+select {
+  border-radius: 2px;
+  background-color: rgb(232, 234, 235);
+  border: .001rem solid rgb(170, 169, 169);
+  font-size: .55rem;
+  margin-left: .7rem;
+  height: .9rem;
+  font-family: 'Goudy Bookletter 1911', serif
+}
+
+.search {
+  margin-left: .7rem;
+  width: 5rem;
+  height: .7rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: .6rem;
+  border: .001rem solid rgb(170, 169, 169);
+  border-radius: 2px;
+}
+

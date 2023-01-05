@@ -1,9 +1,14 @@
 import React from 'react'
 import ListStory from './ListStory'
+import './List.css'
 
 const List = ({stories}) => {
-  console.log(stories)
-  const article = stories.map((story, index) => {
+  const formattedStories = stories.filter(article => {
+    if (article.title && article.multimedia) {
+      return article
+    }
+  })
+  const article = formattedStories.map((story, index) => {
     
     return (
       <ListStory
@@ -12,12 +17,14 @@ const List = ({stories}) => {
         title={story.title}
         abstract={story.abstract}
         byline={story.byline}
-        photo={story.multimedia[0]}
+        photo={story.multimedia}
+        created_date={story.created_date}
+        uri={story.uri}
         />
     )
   })
   return (
-    <div>
+    <div className='list-view'>
       {article}
     </div>
   )

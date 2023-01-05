@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+.single-story {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.img {
+  width: 28rem;
+  height: 18rem;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.caption {
+  width: 28rem;
+  height: 18rem;
+  font-size: .60rem;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: -300px;
+
+}
+
+.single-section {
+  font-size: .75rem;
+  color: rgb(69, 69, 69);
+}
+
+.title {
+  font-family: 'Goudy Bookletter 1911', serif
+}
+
+.single-byline {
+  margin-top: -10px;
+  font-size: .75rem;
+  color: rgb(69, 69, 69);
+}
+
+.single-abstract {
+  margin: 1rem 3rem 0rem 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nyt-link {
+  margin-top: 2rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: black;
+}
