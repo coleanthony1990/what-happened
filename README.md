@@ -5,6 +5,7 @@
 ## Table of Contents
 - [About The Project](#about-the-project)
 - [Project Spec](#project-spec)
+- [Planning](#planning)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Accessibility](#accessibility)
@@ -26,6 +27,12 @@ What Happend? is an application built in Mod 4 of the [Turing School of Software
 * Generate and display user data through data manipulation using React
 * Make network requests to API endpoints to retrieve, manipulate, and display data.
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Planning
+
+I used [Github Projects](https://github.com/users/coleanthony1990/projects/3) to create tasks/issues and track my progress and [Figma](https://www.figma.com/file/z7S76Tnb0uBaAorxqYH5xX/What-Happened%3F?node-id=0%3A1&t=f3QOVCu2ezvO2MV0-1) to create a wire frame.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
