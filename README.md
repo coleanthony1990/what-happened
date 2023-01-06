@@ -8,9 +8,11 @@
 - [Planning](#planning)
 - [Technologies](#technologies)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Accessibility](#accessibility)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
+- [Reflections](#reflections)
 
 ---
 
@@ -62,6 +64,14 @@ I used [Github Projects](https://github.com/users/coleanthony1990/projects/3) to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Usage
+
+
+https://user-images.githubusercontent.com/103971359/211057557-9fe3e271-cab1-47da-83e2-4d82fc53bb4f.mov
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### New feature ideas: 
 - [ ] Utilize local storage so the articles persist upon page reload
@@ -90,6 +100,13 @@ The following resources helped us build this project:
 [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
 [![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://v5.reactrouter.com/web/api/Hooks)
 [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Reflections
+
+I felt that this project was really great practice for me to round out my skills in react. I really enjoyed putting this app together becuase it lightly touched on a lot of fun React concepts. It was low stress but fun because I read the new york times. Thinking about how I could've done some things differently, I realized I should've made routes for each of the sections. There were some small challenges, like using regex to format the titles so they could be used for routes, that gave me really good experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
